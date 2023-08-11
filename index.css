@@ -1,0 +1,67 @@
+:root{
+    --bodyBG: #D6E1F0;
+    --white: #FEFFFE;
+    --QrBG: #D8D9DA;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(https://fonts.google.com/specimen/Outfit);
+}
+
+body{
+    margin: 0%;
+    background-color: var(--bodyBG);
+    height: 100vh !important;
+    overflow: hidden;
+    border: 2px solid black;
+    text-align: center;
+    box-sizing: border-box !important;
+    padding-top: 15vh;
+}
+
+    /* QR SECTION CONTAIINER DIV */
+.qrContain{
+    background-color: var(--white);
+    display: inline-block;
+    border-radius: 15px;
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+    /* QR IMAGE */
+.qrImg{
+    border-radius: 15px;
+    background-color: var(--QrBG);
+    width: 100%;
+    box-sizing: border-box !important;
+    overflow: hidden;
+    margin: auto;
+}
+.qrImg{
+    width: 90%;
+    object-fit: contain !important;
+}
+
+.qrTxt{
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+            /* MEDIA QUERTIES STARTS FROM 1162 AND BELOW */
+
+@media (max-width: 1163px) {
+    .qrContain{
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .qrContain{
+        width: 80% !important;
+    }
+}
